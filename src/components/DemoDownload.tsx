@@ -86,11 +86,11 @@ export const DemoDownload: React.FC = () => {
             <span className="text-muted">looks like.</span>
           </motion.h2>
           <motion.p variants={textItemVariants} className="font-sans font-medium text-gray-700" style={{ fontSize: '1.15rem', lineHeight: '1.6', marginBottom: '2rem', maxWidth: '450px' }}>
-            The S.O.V.A demo shows a complete 5-tier adversarial audit on a sample enterprise AI interface — including attack logs, score breakdown, financial exposure modeling, and <strong className="text-[#040224] font-extrabold">remediation recommendations.</strong>
+            The S.O.V.A demo shows a complete 5-tier adversarial audit on a sample enterprise AI interface — including test logs, score breakdown, financial exposure modeling, and <strong className="text-[#040224] font-extrabold">remediation recommendations.</strong>
           </motion.p>
           <motion.ul variants={textItemVariants} className="font-sans font-medium text-gray-800" style={{ listStyle: 'none', padding: 0, margin: '0 0 2rem 0', fontSize: '1.05rem', lineHeight: 2 }}>
             <li><strong className="text-accent">·</strong> Complete SRS score breakdown (A through D)</li>
-            <li><strong className="text-accent">·</strong> Live attack session logs from S.O.V.A</li>
+            <li><strong className="text-accent">·</strong> Live test session logs from S.O.V.A</li>
             <li><strong className="text-accent">·</strong> Financial exposure + Max Probable Loss model</li>
             <li><strong className="text-accent">·</strong> Remediation priority matrix</li>
           </motion.ul>

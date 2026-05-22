@@ -35,7 +35,7 @@ export const LiveSoftwareVisual: React.FC = () => {
           <div className="relative">
             <img 
               src="/strike-panel.png" 
-              alt="S.O.V.A Strike In Progress — Live attack simulation showing attacker node logs, victim telemetry, and real-time scoring" 
+              alt="S.O.V.A Strike In Progress — Live test simulation showing tester node logs, victim telemetry, and real-time scoring" 
               className="w-full h-auto block"
               loading="lazy"
             />

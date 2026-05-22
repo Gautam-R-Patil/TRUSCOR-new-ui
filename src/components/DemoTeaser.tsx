@@ -29,7 +29,7 @@ export const DemoTeaser: React.FC = () => {
             S.O.V.A Demo
           </h2>
           <p className="text-gray-700 font-medium mt-4 max-w-3xl mx-auto text-lg leading-relaxed">
-            Watch our autonomous attack engine spawn multiple attackers coordinating together to breach, audit, and score an enterprise AI system — in real time.
+            Watch our autonomous test engine spawn multiple testers coordinating together to breach, audit, and score an enterprise AI system — in real time.
           </p>
         </motion.div>
 

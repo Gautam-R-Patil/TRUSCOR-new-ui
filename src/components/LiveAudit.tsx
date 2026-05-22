@@ -23,7 +23,7 @@ export const LiveAudit: React.FC = () => {
   }, []);
   
   // Strike in progress state
-  const [attackerLogs, setAttackerLogs] = useState<Log[]>([]);
+  const [testerLogs, setTesterLogs] = useState<Log[]>([]);
   const [placeholderText, setPlaceholderText] = useState('');
   const fullPlaceholder = "https://your-company.com/ai-chat";
 
@@ -87,7 +87,7 @@ export const LiveAudit: React.FC = () => {
   // Bar chart heights (0 to 100%)
   const [bars, setBars] = useState({ AUTH: 0, DD: 0, LOGIC: 0, PII: 0, SEC: 0, DOS: 0 });
 
-  const attackerRef = useRef<HTMLDivElement>(null);
+  const testerRef = useRef<HTMLDivElement>(null);
   const victimRef = useRef<HTMLDivElement>(null);
   const resultRef = useRef<HTMLDivElement>(null);
 
@@ -108,12 +108,12 @@ export const LiveAudit: React.FC = () => {
     
     setAuditState('SCANNING');
     setScore(850);
-    setAttackerLogs([]);
+    setTesterLogs([]);
     setVictimLogs([]);
     setPenalties([]);
     setBars({ AUTH: 0, DD: 0, LOGIC: 0, PII: 0, SEC: 0, DOS: 0 });
 
-    // Simulate Attacker Logs
+    // Simulate Tester Logs
     const atkSequence = [
       { t: 'INFO', m: 'S.O.V.A System online. Awaiting commands.' },
       { t: 'EXEC', m: 'Turn 3/6 — Injecting payload...' },
@@ -145,7 +145,7 @@ export const LiveAudit: React.FC = () => {
     aTimerRef.current = setInterval(() => {
       if (aIdx < atkSequence.length) {
         const currentLog = atkSequence[aIdx];
-        setAttackerLogs(prev => [...prev, { time: formatTime(), type: currentLog.t, msg: currentLog.m }]);
+        setTesterLogs(prev => [...prev, { time: formatTime(), type: currentLog.t, msg: currentLog.m }]);
         aIdx++;
       }
     }, 600);
@@ -190,9 +190,9 @@ export const LiveAudit: React.FC = () => {
   };
 
   useEffect(() => {
-    if (attackerRef.current) attackerRef.current.scrollTop = attackerRef.current.scrollHeight;
+    if (testerRef.current) testerRef.current.scrollTop = testerRef.current.scrollHeight;
     if (victimRef.current) victimRef.current.scrollTop = victimRef.current.scrollHeight;
-  }, [attackerLogs, victimLogs]);
+  }, [testerLogs, victimLogs]);
 
 
   const idleContainerVariants = {
@@ -241,7 +241,7 @@ export const LiveAudit: React.FC = () => {
               
               <motion.h2 variants={idleItemVariants} className="mb-6" style={{ fontFamily: 'var(--font-sans)', fontWeight: 700, fontSize: 'clamp(1.8rem, 5vw, 4.5rem)', lineHeight: 1.1, letterSpacing: '-0.03em', color: 'var(--text-primary)' }}>
                 Enter your AI interface URL.<br />
-                We'll attack it right now.
+                We'll test it right now.
               </motion.h2>
               
               <motion.p variants={idleItemVariants} className="font-sans font-medium text-gray-700 mb-10 mx-auto xl:mx-0" style={{ fontSize: '1.15rem', lineHeight: '1.6', maxWidth: '520px' }}>
@@ -298,7 +298,7 @@ export const LiveAudit: React.FC = () => {
                     transition={{ duration: 1.5, repeat: Infinity }}
                     className="w-1.5 h-1.5 rounded-full bg-accent"
                   />
-                  ATTACKER NODE (S.O.V.A) · EXECUTING
+                  TESTER NODE (S.O.V.A) · EXECUTING
                 </div>
               </div>
               <div className="font-mono text-[13px] space-y-4 text-left font-medium min-h-[220px]">
@@ -348,11 +348,11 @@ export const LiveAudit: React.FC = () => {
               <div className="dashboard-col">
                 <div>
                   <div className="panel-title">
-                    <span><span style={{ color: 'var(--accent-green)' }}>●</span> ATTACKER NODE (JARVIS)</span>
+                    <span><span style={{ color: 'var(--accent-green)' }}>●</span> TESTER NODE (JARVIS)</span>
                     <span>+ EXECUTING</span>
                   </div>
-                  <div className="log-panel" ref={attackerRef}>
-                    {attackerLogs.map((log, i) => (
+                  <div className="log-panel" ref={testerRef}>
+                    {testerLogs.map((log, i) => (
                       <div className="log-line" key={i}>
                         <span className="log-time">{log.time}</span>
                         <span className={`log-type ${log.type.toLowerCase()}`}>{log.type}</span>
@@ -441,7 +441,7 @@ export const LiveAudit: React.FC = () => {
               >
                 <h3 className="font-mono font-bold" style={{ fontSize: '16px', letterSpacing: '0.1em', marginBottom: '12px' }}>ACTUARIAL AUDIT REPORT</h3>
                 <div className="font-mono text-muted tracking-wide" style={{ fontSize: '13px' }}>
-                  Completed · Session ATX-232B-1941 · Mode: LIVE ATTACK
+                  Completed · Session ATX-232B-1941 · Mode: LIVE TEST
                 </div>
               </motion.div>
 

@@ -28,7 +28,7 @@ export const Footer: React.FC = () => {
             <div className="logo-mark" style={{ fontSize: '1.5rem', marginBottom: '1rem' }}>TRUSCOR</div>
             <p className="text-muted" style={{ fontSize: '14px', maxWidth: '300px', marginBottom: '1.5rem' }}>
               The Actuarial Standard for Agentic Liability.<br />
-              We bypass the API and attack the visual interface.
+              We bypass the API and test the visual interface.
             </p>
             <div style={{ display: 'flex', gap: '1.25rem' }}>
               {/* Instagram */}

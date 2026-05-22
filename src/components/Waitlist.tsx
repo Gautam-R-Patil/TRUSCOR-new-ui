@@ -16,7 +16,7 @@ export const Waitlist: React.FC = () => {
   // Number Roll Animation
   useEffect(() => {
     if (isInView) {
-      const controls = animate(0, 412, {
+      const controls = animate(0, 115, {
         duration: 3,
         ease: "easeOut" as any,
         onUpdate: (val) => setCompanyCount(Math.floor(val))
@@ -25,9 +25,9 @@ export const Waitlist: React.FC = () => {
     }
   }, [isInView]);
 
-  // Countdown Timer Logic (Target: May 25, 2026)
+  // Countdown Timer Logic (Target: June 1, 2026)
   useEffect(() => {
-    const targetDate = new Date('2026-05-25T00:00:00Z').getTime();
+    const targetDate = new Date('2026-06-01T00:00:00Z').getTime();
     
     const updateTimer = () => {
       const now = new Date().getTime();
@@ -105,10 +105,10 @@ export const Waitlist: React.FC = () => {
           <motion.div variants={itemVariants} className="text-left">
             <div className="eyebrow">— EARLY ACCESS</div>
             <h2 className="headline-section text-[#040224] font-sans font-extrabold tracking-tight mb-6" style={{ fontSize: '3rem', lineHeight: 1.1 }}>
-              Join the Autonomous<br/>Underwriting Swarm
+              Join the TRUSCOR<br/>Platform
             </h2>
             <p className="text-gray-700 font-medium text-lg leading-relaxed mb-10 max-w-md">
-              The API era is closing. Secure your spot in the first wave of enterprise deployments for the S.O.V.A engine.
+              Secure your spot to leverage the world's first adversarial actuarial engine for AI deployment.
             </p>
 
             {/* Metrics */}

@@ -95,7 +95,7 @@ export const ProductVisual: React.FC = () => {
         initial="hidden"
         animate={isInView ? "visible" : "hidden"}
       >
-        {/* LEFT PANEL: Attacker Node */}
+        {/* LEFT PANEL: Tester Node */}
         <motion.div variants={panelVariants} className="w-full lg:w-1/2">
           <div className="bg-[#050505] border border-white/10 rounded-xl overflow-hidden h-[480px] flex flex-col font-mono shadow-2xl">
             {/* Header */}
@@ -106,7 +106,7 @@ export const ProductVisual: React.FC = () => {
                 <div className="w-2.5 h-2.5 rounded-full bg-[#22c55e]" />
               </div>
               <div className="text-[10px] text-[#71717a] font-bold tracking-widest flex items-center gap-2">
-                <span className="text-[#27c93f]">●</span> ATTACKER NODE (S.O.V.A) · EXECUTING
+                <span className="text-[#27c93f]">●</span> TESTER NODE (S.O.V.A) · EXECUTING
               </div>
               <div className="w-10" />
             </div>

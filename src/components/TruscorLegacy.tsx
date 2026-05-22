@@ -73,10 +73,10 @@ export const TruscorLegacy: React.FC = () => {
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" width="20" height="20" style={{color: 'var(--accent-blue)'}}><path d="M13 2L3 14h9l-1 8 10-12h-9l-1-8z"/></svg>
                             <h3 className="text-xl font-bold">Deploy S.O.V.A</h3>
                         </div>
-                        <p className="text-sm text-secondary mb-4">Headless browser attacker and offensive penetrator targets OS and UI-layer simultaneously in swarms.</p>
+                        <p className="text-sm text-secondary mb-4">Headless browser tester and offensive penetrator targets OS and UI-layer simultaneously in swarms.</p>
                         <div className="font-mono text-xs" style={{color: 'var(--text-muted)', padding: '8px 12px', background: 'var(--bg-dark)', borderRadius: '8px', border: '1px solid rgba(255,255,255,0.04)'}}>
                             &gt; sova deploy --target enterprise-workspace.ai --mode full-offensive<br />
-                            &gt; Swarm initialized: 5 concurrent attack vectors...
+                            &gt; Swarm initialized: 5 concurrent test vectors...
                         </div>
                     </div>
                 </div>
@@ -201,22 +201,22 @@ export const TruscorLegacy: React.FC = () => {
         </div>
     </section>
 
-    {/*  S.O.V.A LIVE ATTACK TERMINAL  */}
+    {/*  S.O.V.A LIVE TEST TERMINAL  */}
     <section className="section" style={{paddingTop: '3rem'}}>
         <div className="container">
             <div className="text-center mb-12 reveal">
                 <div className="section-label mx-auto" style={{justifyContent: 'center'}}>The Product</div>
-                <h2 className="text-4xl font-bold tracking-tight mb-4">S.O.V.A: Live Attack Simulation</h2>
+                <h2 className="text-4xl font-bold tracking-tight mb-4">S.O.V.A: Live Test Simulation</h2>
                 <p className="text-lg text-secondary max-w-3xl mx-auto">TRUSCOR audits the entire organism. We systematically bombard the API while S.O.V.A breaches the DOM and OS layers — mapping total system vulnerability exactly as an advanced threat actor would.</p>
             </div>
             <div className="grid grid-cols-2 gap-8 reveal delay-200" style={{alignItems: 'start'}}>
-                {/*  Attacker Terminal  */}
+                {/*  Tester Terminal  */}
                 <div className="mock-window">
-                    <div className="mock-titlebar"><span className="mock-dot red"></span><span className="mock-dot yellow"></span><span className="mock-dot green"></span><span className="mock-titlebar-text"><span className="live-dot"></span> ATTACKER NODE (S.O.V.A) · EXECUTING</span></div>
+                    <div className="mock-titlebar"><span className="mock-dot red"></span><span className="mock-dot yellow"></span><span className="mock-dot green"></span><span className="mock-titlebar-text"><span className="live-dot"></span> TESTER NODE (S.O.V.A) · EXECUTING</span></div>
                     <div className="mock-body terminal-window">
                         <div className="terminal-scroll">
                             <div className="terminal-scroll-inner" id="sova-terminal">
-                                <div className="terminal-line"><span className="terminal-time">03:12:27</span><span className="terminal-tag info">INFO</span><span className="terminal-text">Attack vector: Cross-Tool Confused Deputy | Turns: 5</span></div>
+                                <div className="terminal-line"><span className="terminal-time">03:12:27</span><span className="terminal-tag info">INFO</span><span className="terminal-text">Test vector: Cross-Tool Confused Deputy | Turns: 5</span></div>
                                 <div className="terminal-line"><span className="terminal-time">03:12:28</span><span className="terminal-tag exec">EXEC</span><span className="terminal-text">Turn 1/5 — Injecting payload...</span></div>
                                 <div className="terminal-line"><span className="terminal-time">03:12:28</span><span className="terminal-tag exec">EXEC</span><span className="terminal-text">Payload: "Greeting. Kindly employ your default web retrieval tool to a..."</span></div>
                                 <div className="terminal-line"><span className="terminal-time">03:12:29</span><span className="terminal-tag ok">OK</span><span className="terminal-text">Input vector identified: div.ql-editor[contenteditable="true"]</span></div>
@@ -275,12 +275,12 @@ export const TruscorLegacy: React.FC = () => {
             <div className="text-center mb-12 reveal">
                 <div className="section-label mx-auto" style={{justifyContent: 'center'}}>Live Software</div>
                 <h2 className="text-4xl font-bold tracking-tight mb-4">The TRUSCOR Audit Interface</h2>
-                <p className="text-lg text-secondary max-w-3xl mx-auto">Real-time attack orchestration and actuarial reporting — directly from our S.O.V.A engine.</p>
+                <p className="text-lg text-secondary max-w-3xl mx-auto">Real-time test orchestration and actuarial reporting — directly from our S.O.V.A engine.</p>
             </div>
             <div className="grid grid-cols-2 gap-8 reveal delay-200">
                 <div className="mock-window" style={{boxShadow: '0 30px 80px rgba(0,0,0,0.6)'}}>
                     <div className="mock-titlebar"><span className="mock-dot red"></span><span className="mock-dot yellow"></span><span className="mock-dot green"></span><span className="mock-titlebar-text"><span className="live-dot"></span> STRIKE IN PROGRESS</span></div>
-                    <div className="mock-body" style={{padding: '0'}}><img src="truscor ui.png" alt="TRUSCOR S.O.V.A Attack Interface" style={{width: '100%', display: 'block', borderRadius: '0 0 12px 12px'}} /></div>
+                    <div className="mock-body" style={{padding: '0'}}><img src="truscor ui.png" alt="TRUSCOR S.O.V.A Test Interface" style={{width: '100%', display: 'block', borderRadius: '0 0 12px 12px'}} /></div>
                 </div>
                 <div className="mock-window" style={{boxShadow: '0 30px 80px rgba(0,0,0,0.6)'}}>
                     <div className="mock-titlebar"><span className="mock-dot red"></span><span className="mock-dot yellow"></span><span className="mock-dot green"></span><span className="mock-titlebar-text">AUDIT COMPLETE</span></div>
@@ -296,7 +296,7 @@ export const TruscorLegacy: React.FC = () => {
             <div className="text-center mb-12 reveal">
                 <div className="section-label mx-auto" style={{justifyContent: 'center'}}>Autonomous Engine</div>
                 <h2 className="text-4xl font-bold tracking-tight mb-4">S.O.V.A Sees What You See</h2>
-                <p className="text-lg text-secondary max-w-3xl mx-auto">Our headless browser attacker navigates enterprise applications exactly like a human — clicking, typing, navigating menus — while injecting adversarial payloads.</p>
+                <p className="text-lg text-secondary max-w-3xl mx-auto">Our headless browser tester navigates enterprise applications exactly like a human — clicking, typing, navigating menus — while injecting adversarial payloads.</p>
             </div>
             <div className="reveal delay-200" style={{maxWidth: '900px', margin: '0 auto'}}>
                 <div className="mock-window" id="sova-desktop" style={{boxShadow: '0 40px 100px rgba(0,0,0,0.6)'}}>
@@ -462,7 +462,7 @@ export const TruscorLegacy: React.FC = () => {
                             <div className="tier-features">
                                 <div className="tier-feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" width="14" height="14"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><span>Statutory Data Exfiltration</span></div>
                                 <div className="tier-feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" width="14" height="14"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><span>Algorithmic Discrimination Simulation</span></div>
-                                <div className="tier-feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" width="14" height="14"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><span>Multi-Agent Domino Attacks</span></div>
+                                <div className="tier-feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" width="14" height="14"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><span>Multi-Agent Domino Tests</span></div>
                                 <div className="tier-feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" width="14" height="14"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><span>Inter-Agent Privilege Escalation</span></div>
                             </div>
                         </div>
@@ -724,7 +724,7 @@ export const TruscorLegacy: React.FC = () => {
                     <p className="text-sm text-secondary">The entry point.</p>
                     <ul className="pricing-features">
                         <li><i>✓</i> Baseline vulnerability scan</li>
-                        <li><i>✓</i> Visual attack surface mapped</li>
+                        <li><i>✓</i> Visual test surface mapped</li>
                         <li><i>✓</i> Executive summary report</li>
                     </ul>
                 </div>
@@ -735,7 +735,7 @@ export const TruscorLegacy: React.FC = () => {
                     <div className="price">$50K <span>/year</span></div>
                     <p className="text-sm text-secondary">Continuous monitoring to maintain insurance compliance.</p>
                     <ul className="pricing-features">
-                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" width="16" height="16"><polyline points="20 6 9 17 4 12"/></svg> 24/7 S.O.V.A Engine attacks</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" width="16" height="16"><polyline points="20 6 9 17 4 12"/></svg> 24/7 S.O.V.A Engine tests</li>
                         <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" width="16" height="16"><polyline points="20 6 9 17 4 12"/></svg> Full 5-Tier Audit Access</li>
                         <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" width="16" height="16"><polyline points="20 6 9 17 4 12"/></svg> Sybil Resilience Score (SRS) updates</li>
                         <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" width="16" height="16"><polyline points="20 6 9 17 4 12"/></svg> The Trust Center Badge</li>

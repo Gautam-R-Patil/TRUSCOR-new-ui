@@ -229,12 +229,12 @@ export const AboutUs: React.FC<AboutUsProps> = ({ isExpanded, setIsExpanded }) =
                       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" width="20" height="20" className="text-accent"><path d="M13 2L3 14h9l-1 8 10-12h-9l-1-8z"/></svg>
                       Deploy S.O.V.A
                     </h3>
-                    <p className="text-gray-700 font-medium text-base leading-relaxed mb-6 flex-grow">Headless browser attacker and offensive penetrator targets OS and UI-layer simultaneously in swarms. S.O.V.A sees what you see—clicking, typing, and navigating menus while injecting adversarial payloads.</p>
+                    <p className="text-gray-700 font-medium text-base leading-relaxed mb-6 flex-grow">Headless browser tester and offensive penetrator targets OS and UI-layer simultaneously in swarms. S.O.V.A sees what you see—clicking, typing, and navigating menus while injecting adversarial payloads.</p>
                     
                     <div className="font-mono text-xs mt-auto" style={{ padding: '12px', background: '#0a0a0a', borderRadius: '8px', border: '1px solid rgba(255,255,255,0.1)', color: '#a1a1aa' }}>
                       <span className="text-accent font-bold">{'>'}</span> sova deploy --target enterprise-workspace.ai<br/>
                       <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.8, repeat: Infinity, repeatType: "reverse" }} className="mt-1">
-                        <span className="text-accent font-bold">{'>'}</span> Swarm initialized: 5 concurrent attack vectors...
+                        <span className="text-accent font-bold">{'>'}</span> Swarm initialized: 5 concurrent test vectors...
                       </motion.div>
                     </div>
                   </motion.div>
@@ -304,13 +304,13 @@ export const AboutUs: React.FC<AboutUsProps> = ({ isExpanded, setIsExpanded }) =
                 <TopicAnimation type="product" />
                 <div className="eyebrow mx-auto">— THE PRODUCT</div>
                 <h2 className="headline-section text-[#040224] font-sans font-extrabold tracking-tight" style={{ fontSize: '2.5rem' }}>
-                  S.O.V.A: Live Attack Simulation
+                  S.O.V.A: Live Test Simulation
                 </h2>
                 <p className="text-gray-700 font-medium mt-4 max-w-3xl mx-auto text-lg leading-relaxed">
                   TRUSCOR audits the entire organism. We systematically bombard the API while S.O.V.A breaches the DOM and OS layers — mapping total system vulnerability exactly as an advanced threat actor would.
                 </p>
                 <p className="text-gray-700 font-medium mt-4 max-w-3xl mx-auto text-lg leading-relaxed">
-                  Real-time attack orchestration and actuarial reporting — watch S.O.V.A breach, audit, and score an enterprise AI system through the TRUSCOR Audit Interface.
+                  Real-time test orchestration and actuarial reporting — watch S.O.V.A breach, audit, and score an enterprise AI system through the TRUSCOR Audit Interface.
                 </p>
               </motion.div>
               
@@ -368,7 +368,7 @@ export const AboutUs: React.FC<AboutUsProps> = ({ isExpanded, setIsExpanded }) =
                   S.O.V.A Sees What You See
                 </h2>
                 <p className="text-gray-700 font-medium mt-4 max-w-3xl mx-auto text-lg leading-relaxed">
-                  Our headless browser attacker navigates enterprise applications exactly like a human — clicking, typing, navigating menus — while injecting adversarial payloads.
+                  Our headless browser tester navigates enterprise applications exactly like a human — clicking, typing, navigating menus — while injecting adversarial payloads.
                 </p>
               </motion.div>
               

@@ -46,7 +46,7 @@ export const Team: React.FC = () => {
             <h3 className="font-sans font-bold text-2xl mb-4 text-[#040224]">Gautam Patil</h3>
             <div className="font-mono text-accent text-sm font-bold mb-4 tracking-wide">FOUNDING CEO & CTO</div>
             <p className="text-gray-700 font-medium text-base leading-relaxed mb-6">
-              Architect of the S.O.V.A offensive engine and the TAFAAR actuarial framework. Built the core IP from first principles — both the attack surface and the math behind it. AIR 8303, JEE Advanced.
+              Architect of the S.O.V.A offensive engine and the TAFAAR actuarial framework. Built the core IP from first principles — both the test surface and the math behind it. AIR 8303, JEE Advanced.
             </p>
             <a href="mailto:gautam@truscor.org" className="mt-auto px-6 py-3 bg-[#f8f9fa] hover:bg-white rounded-xl text-[#040224] font-bold text-sm transition-all flex items-center justify-center gap-2 border border-gray-200 hover:border-accent hover:shadow-md hover:text-accent">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>

@@ -9,7 +9,7 @@ const pricingTiers = [
     subtitle: "The entry point.",
     features: [
       "Baseline vulnerability scan",
-      "Visual attack surface mapped",
+      "Visual test surface mapped",
       "Executive summary report"
     ],
     isCore: false
@@ -21,7 +21,7 @@ const pricingTiers = [
     period: "/year",
     subtitle: "Continuous monitoring to maintain insurance compliance.",
     features: [
-      "24/7 S.O.V.A Engine attacks",
+      "24/7 S.O.V.A Engine tests",
       "Full 5-Tier Audit Access",
       "Sybil Resilience Score (SRS) updates",
       "The Trust Center Badge"

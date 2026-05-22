@@ -128,7 +128,7 @@ export const Hero: React.FC<{ hasLoaded: boolean }> = ({ hasLoaded }) => {
             BUILT FOR THE $400B ENTERPRISE AI DEPLOYMENT WAVE
           </div>
           <p className="font-sans font-medium text-gray-700" style={{ fontSize: '1.15rem', lineHeight: '1.6' }}>
-            We attack the API, the UI, and the OS layer simultaneously in autonomous swarms — then grade what the world is struggling to even measure: <strong className="text-[#040224] font-extrabold">the true financial risk of corporate AI.</strong>
+            We test the API, the UI, and the OS layer simultaneously in autonomous swarms — then grade what the world is struggling to even measure: <strong className="text-[#040224] font-extrabold">the true financial risk of corporate AI.</strong>
           </p>
         </motion.div>
 
