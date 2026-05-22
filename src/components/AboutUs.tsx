@@ -12,8 +12,8 @@ import { FinancialEndgameVisual } from './FinancialEndgameVisual';
 import { BusinessModelPricingVisual } from './BusinessModelPricingVisual';
 import { ReciprocalExchangeVisual } from './ReciprocalExchangeVisual';
 
-// Virtual section: mounts children when near viewport, UNMOUNTS when far away.
-// This ensures only 2-3 heavy components (with their setInterval/RAF loops) are alive at once.
+// Virtual section: mounts children when near viewport, but DOES NOT UNMOUNT them.
+// This prevents catastrophic scroll jumping caused by document height collapsing above the viewport.
 const InViewSection: React.FC<{ children: React.ReactNode; minHeight?: string }> = ({ children, minHeight = '200px' }) => {
   const ref = useRef<HTMLDivElement>(null);
   const [visible, setVisible] = useState(false);
@@ -21,8 +21,12 @@ const InViewSection: React.FC<{ children: React.ReactNode; minHeight?: string }>
     const el = ref.current;
     if (!el) return;
     const obs = new IntersectionObserver(
-      ([entry]) => { setVisible(entry.isIntersecting); },
-      { rootMargin: '200px 0px 200px 0px' } // mount 200px before entering, unmount 200px after leaving
+      ([entry]) => { 
+        if (entry.isIntersecting) {
+          setVisible(true); 
+        }
+      },
+      { rootMargin: '800px 0px 800px 0px' } // mount well before entering
     );
     obs.observe(el);
     return () => obs.disconnect();
