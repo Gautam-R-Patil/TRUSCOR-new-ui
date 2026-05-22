@@ -10,7 +10,7 @@ export const ReciprocalExchangeVisual: React.FC = () => {
     return (
         <div className="w-full flex justify-center py-6 md:py-12 px-3 md:px-8">
             <div 
-                className="w-full max-w-[1400px] overflow-hidden rounded-3xl md:rounded-[2.5rem] bg-[#f8f9fc] flex flex-col"
+                className="w-full max-w-6xl mx-auto overflow-hidden rounded-3xl md:rounded-[2.5rem] bg-[#f8f9fc] flex flex-col"
                 style={{ 
                     boxShadow: '0 20px 60px -15px rgba(0,0,0,0.05), inset 0 0 0 1px rgba(255,255,255,1)'
                 }}
