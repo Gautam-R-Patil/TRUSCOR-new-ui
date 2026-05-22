@@ -114,21 +114,21 @@ export const AboutUs: React.FC<AboutUsProps> = ({ isExpanded, setIsExpanded }) =
             className="flex-center relative z-10"
           >
             <motion.h2 
-              className="headline-section font-sans font-extrabold tracking-tight mb-8 lg:mb-12 text-center px-4" 
-              style={{ fontSize: 'clamp(2.5rem, 5vw, 4rem)', color: '#040224', lineHeight: 1.1 }}
+              className="headline-section font-sans font-extrabold tracking-tight mb-12 lg:mb-20 text-center px-4 mt-8" 
+              style={{ fontSize: 'clamp(2.5rem, 5vw, 4rem)', color: '#040224', lineHeight: 1.2 }}
               animate={{ 
                 textShadow: ["0px 0px 0px rgba(167, 112, 255, 0)", "0px 0px 40px rgba(167, 112, 255, 0.4)", "0px 0px 0px rgba(167, 112, 255, 0)"],
               }}
               transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" as any }}
             >
-              Curious how we price AI risk?<br/>
-              <span style={{ fontSize: 'clamp(1.2rem, 3vw, 2rem)', color: '#6e7781', fontWeight: 600, display: 'block', marginTop: '1.5rem', letterSpacing: '-0.02em' }}>
-                Look under the hood of the S.O.V.A engine.
+              The TRUSCOR Masterplan<br/>
+              <span style={{ fontSize: 'clamp(1.2rem, 3vw, 1.8rem)', color: '#6e7781', fontWeight: 500, display: 'block', marginTop: '2.5rem', letterSpacing: '-0.01em', lineHeight: 1.6 }}>
+                Explore our complete pitch deck:<br/>technology, compounding moats, and the financial endgame.
               </span>
             </motion.h2>
             <motion.button 
               onClick={() => setIsExpanded(true)} 
-              className="relative overflow-hidden group cursor-pointer mt-4"
+              className="relative overflow-hidden group cursor-pointer mt-12 mb-16"
               style={{ 
                 padding: 'clamp(1rem, 2vw, 1.5rem) clamp(2.5rem, 5vw, 4rem)', 
                 fontSize: 'clamp(1.1rem, 2.5vw, 1.4rem)',
@@ -153,7 +153,7 @@ export const AboutUs: React.FC<AboutUsProps> = ({ isExpanded, setIsExpanded }) =
               transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" as any }}
             >
               <span className="relative z-10 flex items-center gap-3">
-                Unlock The Actuarial Math 
+                EXPLORE THE FULL DECK
                 <motion.span animate={{ y: [0, 5, 0] }} transition={{ duration: 1.5, repeat: Infinity }}>↓</motion.span>
               </span>
               <motion.div 
