@@ -57,7 +57,7 @@ export const ReciprocalExchangeVisual: React.FC = () => {
                             animate={{ y: [-3, 3, -3] }}
                             transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
                         >
-                            <div className="text-white font-bold text-[10px] md:text-base tracking-widest uppercase bg-[#040224]/95 backdrop-blur-md px-4 py-2 md:px-8 md:py-3 rounded-full shadow-[0_15px_30px_rgba(4,2,36,0.5)] border border-slate-700/50">
+                            <div className="text-white font-bold text-[9px] md:text-sm tracking-widest uppercase bg-[#040224]/95 backdrop-blur-md px-3 py-1.5 md:px-6 md:py-2.5 rounded-full shadow-[0_15px_30px_rgba(4,2,36,0.5)] border border-slate-700/50">
                                 TRUSCOR
                             </div>
                         </motion.div>
@@ -68,11 +68,11 @@ export const ReciprocalExchangeVisual: React.FC = () => {
                             animate={{ y: [-5, 5, -5] }}
                             transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
                         >
-                            <div className="flex items-center gap-1.5 md:gap-3 bg-white/95 backdrop-blur-md px-2 py-1 md:px-4 md:py-2 rounded-xl md:rounded-[1.25rem] shadow-[0_10px_30px_-5px_rgba(0,0,0,0.15)] border border-white">
-                                <div className="bg-rose-50 p-1 md:p-2 rounded-lg md:rounded-xl">
+                            <div className="flex items-center gap-1.5 md:gap-2.5 bg-white/95 backdrop-blur-md px-2 py-1 md:px-3 md:py-1.5 rounded-lg md:rounded-xl shadow-[0_10px_30px_-5px_rgba(0,0,0,0.15)] border border-white">
+                                <div className="bg-rose-50 p-1 md:p-1.5 rounded-md md:rounded-lg">
                                     <HeartIcon />
                                 </div>
-                                <span className="font-sans font-bold text-slate-700 text-[9px] sm:text-[10px] md:text-sm whitespace-nowrap">Healthcare AI<br className="block sm:hidden" /> Startup</span>
+                                <span className="font-sans font-bold text-slate-700 text-[8px] sm:text-[9px] md:text-[11px] whitespace-nowrap">Healthcare AI<br className="block sm:hidden" /> Startup</span>
                             </div>
                         </motion.div>
 
@@ -82,11 +82,11 @@ export const ReciprocalExchangeVisual: React.FC = () => {
                             animate={{ y: [-4, 4, -4] }}
                             transition={{ duration: 4.5, repeat: Infinity, ease: "easeInOut", delay: 1 }}
                         >
-                            <div className="flex items-center gap-1.5 md:gap-3 bg-white/95 backdrop-blur-md px-2 py-1 md:px-4 md:py-2 rounded-xl md:rounded-[1.25rem] shadow-[0_10px_30px_-5px_rgba(0,0,0,0.15)] border border-white">
-                                <div className="bg-indigo-50 p-1 md:p-2 rounded-lg md:rounded-xl">
+                            <div className="flex items-center gap-1.5 md:gap-2.5 bg-white/95 backdrop-blur-md px-2 py-1 md:px-3 md:py-1.5 rounded-lg md:rounded-xl shadow-[0_10px_30px_-5px_rgba(0,0,0,0.15)] border border-white">
+                                <div className="bg-indigo-50 p-1 md:p-1.5 rounded-md md:rounded-lg">
                                     <TruckIcon />
                                 </div>
-                                <span className="font-sans font-bold text-slate-700 text-[9px] sm:text-[10px] md:text-sm whitespace-nowrap">Logistics AI<br className="block sm:hidden" /> Startup</span>
+                                <span className="font-sans font-bold text-slate-700 text-[8px] sm:text-[9px] md:text-[11px] whitespace-nowrap">Logistics AI<br className="block sm:hidden" /> Startup</span>
                             </div>
                         </motion.div>
 
@@ -96,11 +96,11 @@ export const ReciprocalExchangeVisual: React.FC = () => {
                             animate={{ y: [-6, 6, -6] }}
                             transition={{ duration: 5.5, repeat: Infinity, ease: "easeInOut", delay: 1.5 }}
                         >
-                            <div className="flex items-center gap-1.5 md:gap-3 bg-white/95 backdrop-blur-md px-2 py-1 md:px-4 md:py-2 rounded-xl md:rounded-[1.25rem] shadow-[0_10px_30px_-5px_rgba(0,0,0,0.15)] border border-white">
-                                <div className="bg-amber-50 p-1 md:p-2 rounded-lg md:rounded-xl">
+                            <div className="flex items-center gap-1.5 md:gap-2.5 bg-white/95 backdrop-blur-md px-2 py-1 md:px-3 md:py-1.5 rounded-lg md:rounded-xl shadow-[0_10px_30px_-5px_rgba(0,0,0,0.15)] border border-white">
+                                <div className="bg-amber-50 p-1 md:p-1.5 rounded-md md:rounded-lg">
                                     <DollarIcon />
                                 </div>
-                                <span className="font-sans font-bold text-slate-700 text-[9px] sm:text-[10px] md:text-sm whitespace-nowrap">FinTech AI<br className="block sm:hidden" /> Startup</span>
+                                <span className="font-sans font-bold text-slate-700 text-[8px] sm:text-[9px] md:text-[11px] whitespace-nowrap">FinTech AI<br className="block sm:hidden" /> Startup</span>
                             </div>
                         </motion.div>
 
@@ -110,11 +110,11 @@ export const ReciprocalExchangeVisual: React.FC = () => {
                             animate={{ y: [-4, 4, -4] }}
                             transition={{ duration: 4.8, repeat: Infinity, ease: "easeInOut", delay: 2 }}
                         >
-                            <div className="flex items-center gap-1.5 md:gap-3 bg-white/95 backdrop-blur-md px-2 py-1 md:px-4 md:py-2 rounded-xl md:rounded-[1.25rem] shadow-[0_10px_30px_-5px_rgba(0,0,0,0.15)] border border-white">
-                                <div className="bg-emerald-50 p-1 md:p-2 rounded-lg md:rounded-xl">
+                            <div className="flex items-center gap-1.5 md:gap-2.5 bg-white/95 backdrop-blur-md px-2 py-1 md:px-3 md:py-1.5 rounded-lg md:rounded-xl shadow-[0_10px_30px_-5px_rgba(0,0,0,0.15)] border border-white">
+                                <div className="bg-emerald-50 p-1 md:p-1.5 rounded-md md:rounded-lg">
                                     <ShieldIcon />
                                 </div>
-                                <span className="font-sans font-bold text-slate-700 text-[9px] sm:text-[10px] md:text-sm whitespace-nowrap">Cyber Security AI<br className="block sm:hidden" /> Startup</span>
+                                <span className="font-sans font-bold text-slate-700 text-[8px] sm:text-[9px] md:text-[11px] whitespace-nowrap">Cyber Security AI<br className="block sm:hidden" /> Startup</span>
                             </div>
                         </motion.div>
 

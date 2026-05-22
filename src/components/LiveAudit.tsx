@@ -312,7 +312,7 @@ export const LiveAudit: React.FC = () => {
                   >
                     <span className="text-gray-500 whitespace-nowrap">{log.time}</span>
                     <span style={{ color: log.color }} className="w-10 whitespace-nowrap">{log.type}</span>
-                    <span className="text-gray-200">{log.msg}</span>
+                    <span className="text-gray-200 flex-1 break-words">{log.msg}</span>
                   </motion.div>
                 ))}
               </div>

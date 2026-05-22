@@ -648,6 +648,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-mono);
   font-size: 11px;
   overflow-y: auto;
+  overflow-x: hidden;
   height: 220px;
   line-height: 1.5;
   box-shadow: inset 0 0 10px rgba(0,0,0,0.5);
@@ -676,6 +677,11 @@ h1, h2, h3, h4, h5, h6 {
 .log-type {
   min-width: 45px;
   font-weight: 700;
+}
+
+.log-line span:last-child {
+  flex: 1;
+  word-break: break-word;
 }
 
 .log-type.exec { color: #a371f7; }
