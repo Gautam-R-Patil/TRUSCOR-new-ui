@@ -14,6 +14,8 @@ import { Footer } from './components/Footer';
 import { Navigation } from './components/Navigation';
 import { ReciprocalExchangeVisual } from './components/ReciprocalExchangeVisual';
 
+import Lenis from 'lenis';
+
 function App() {
   const [hasLoaded, setHasLoaded] = useState(false);
   const [aboutExpanded, setAboutExpanded] = useState(false);
@@ -24,6 +26,28 @@ function App() {
       history.scrollRestoration = 'manual';
     }
     window.scrollTo(0, 0);
+
+    // Initialize smooth scrolling
+    const lenis = new Lenis({
+      duration: 1.2,
+      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+      orientation: 'vertical',
+      gestureOrientation: 'vertical',
+      smoothWheel: true,
+      wheelMultiplier: 1,
+      touchMultiplier: 2,
+    });
+
+    function raf(time: number) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+
+    requestAnimationFrame(raf);
+
+    return () => {
+      lenis.destroy();
+    };
   }, []);
 
   return (

@@ -62,14 +62,14 @@ export const Footer: React.FC = () => {
           </motion.div>
           
           <motion.div variants={itemVariants} style={{ fontFamily: 'var(--font-mono)', fontSize: '12px', display: 'flex', flexDirection: 'column', gap: '12px' }}>
-            <a href="#" style={{ color: 'var(--text-muted)', textDecoration: 'none' }}>About Us</a>
-            <a href="#" style={{ color: 'var(--text-muted)', textDecoration: 'none' }}>Download Demo</a>
+            <a href="#about" style={{ color: 'var(--text-muted)', textDecoration: 'none' }}>About Us</a>
+            <a href="#technology" style={{ color: 'var(--text-muted)', textDecoration: 'none' }}>Download Demo</a>
             <a href="mailto:gautam@truscor.org" style={{ color: 'var(--text-muted)', textDecoration: 'none' }}>gautam@truscor.org</a>
           </motion.div>
           
           <motion.div variants={itemVariants} style={{ fontFamily: 'var(--font-mono)', fontSize: '12px', display: 'flex', flexDirection: 'column', gap: '12px' }}>
-            <a href="#" style={{ color: 'var(--text-muted)', textDecoration: 'none' }}>S.O.V.A Engine</a>
-            <a href="#" style={{ color: 'var(--text-muted)', textDecoration: 'none' }}>Audit Tiers</a>
+            <a href="#section-audit" style={{ color: 'var(--text-muted)', textDecoration: 'none' }}>S.O.V.A Engine</a>
+            <a href="#section-audit" style={{ color: 'var(--text-muted)', textDecoration: 'none' }}>Audit Tiers</a>
             <a href="#" style={{ color: 'var(--text-muted)', textDecoration: 'none' }}>Trust Center</a>
           </motion.div>
         </div>
