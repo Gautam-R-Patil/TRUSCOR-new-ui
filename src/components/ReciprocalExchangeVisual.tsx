@@ -118,34 +118,7 @@ export const ReciprocalExchangeVisual: React.FC = () => {
                             </div>
                         </motion.div>
 
-                        {/* Animated 3D Pulsing Spheres */}
-                        <motion.div 
-                            className="absolute w-2 h-2 md:w-4 md:h-4 rounded-full shadow-[0_5px_15px_rgba(99,102,241,0.6)] border border-white/50"
-                            style={{ 
-                                left: '35%', top: '45%',
-                                background: 'radial-gradient(circle at 30% 30%, #a5b4fc, #4f46e5, #312e81)'
-                            }}
-                            animate={{ opacity: [0, 1, 0], scale: [0.5, 1.2, 0.5] }}
-                            transition={{ duration: 2, repeat: Infinity }}
-                        />
-                        <motion.div 
-                            className="absolute w-2 h-2 md:w-4 md:h-4 rounded-full shadow-[0_5px_15px_rgba(244,63,94,0.6)] border border-white/50"
-                            style={{ 
-                                right: '40%', top: '65%',
-                                background: 'radial-gradient(circle at 30% 30%, #fda4af, #e11d48, #881337)'
-                            }}
-                            animate={{ opacity: [0, 1, 0], scale: [0.5, 1.2, 0.5] }}
-                            transition={{ duration: 2.5, repeat: Infinity, delay: 0.5 }}
-                        />
-                         <motion.div 
-                            className="absolute w-2 h-2 md:w-4 md:h-4 rounded-full shadow-[0_5px_15px_rgba(245,158,11,0.6)] border border-white/50"
-                            style={{ 
-                                left: '45%', bottom: '35%',
-                                background: 'radial-gradient(circle at 30% 30%, #fcd34d, #d97706, #78350f)'
-                            }}
-                            animate={{ opacity: [0, 1, 0], scale: [0.5, 1.2, 0.5] }}
-                            transition={{ duration: 2.2, repeat: Infinity, delay: 1 }}
-                        />
+
                     </div>
                 </div>
             </div>

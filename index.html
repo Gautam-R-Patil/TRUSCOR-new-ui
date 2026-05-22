@@ -3,7 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link id="favicon" rel="icon" type="image/svg+xml" href="/favicon-light.svg" />
+    <script>
+      const favicon = document.getElementById('favicon');
+      const matcher = window.matchMedia('(prefers-color-scheme: dark)');
+      const updateFavicon = () => {
+        favicon.href = matcher.matches ? '/favicon-dark.svg' : '/favicon-light.svg';
+      };
+      updateFavicon();
+      matcher.addEventListener('change', updateFavicon);
+    </script>
     <title>TRUSCOR — Institutional AI Risk Intelligence Platform</title>
   </head>
   <body>
