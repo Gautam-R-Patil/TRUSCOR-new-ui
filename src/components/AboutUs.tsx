@@ -114,37 +114,46 @@ export const AboutUs: React.FC<AboutUsProps> = ({ isExpanded, setIsExpanded }) =
             className="flex-center relative z-10"
           >
             <motion.h2 
-              className="headline-section font-sans font-extrabold tracking-tight mb-8 lg:mb-16 text-center px-4" 
-              style={{ fontSize: '3rem', color: '#040224' }}
+              className="headline-section font-sans font-extrabold tracking-tight mb-8 lg:mb-12 text-center px-4" 
+              style={{ fontSize: 'clamp(2.5rem, 5vw, 4rem)', color: '#040224', lineHeight: 1.1 }}
               animate={{ 
-                textShadow: ["0px 0px 0px rgba(167, 112, 255, 0)", "0px 0px 30px rgba(167, 112, 255, 0.6)", "0px 0px 0px rgba(167, 112, 255, 0)"],
+                textShadow: ["0px 0px 0px rgba(167, 112, 255, 0)", "0px 0px 40px rgba(167, 112, 255, 0.4)", "0px 0px 0px rgba(167, 112, 255, 0)"],
               }}
-              transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" as any }}
+              transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" as any }}
             >
-              The actuarial math behind S.O.V.A
+              Curious how we price AI risk?<br/>
+              <span style={{ fontSize: 'clamp(1.2rem, 3vw, 2rem)', color: '#6e7781', fontWeight: 600, display: 'block', marginTop: '1.5rem', letterSpacing: '-0.02em' }}>
+                Look under the hood of the S.O.V.A engine.
+              </span>
             </motion.h2>
             <motion.button 
               onClick={() => setIsExpanded(true)} 
-              className="relative overflow-hidden group cursor-pointer mt-8"
+              className="relative overflow-hidden group cursor-pointer mt-4"
               style={{ 
-                padding: 'clamp(0.9rem, 2vw, 1.25rem) clamp(2rem, 4vw, 3.5rem)', 
-                fontSize: 'clamp(1rem, 2.5vw, 1.25rem)',
-                backgroundColor: 'var(--accent-purple)',
+                padding: 'clamp(1rem, 2vw, 1.5rem) clamp(2.5rem, 5vw, 4rem)', 
+                fontSize: 'clamp(1.1rem, 2.5vw, 1.4rem)',
+                background: 'linear-gradient(135deg, #a770ff, #7f3bff)',
                 color: 'white',
-                border: 'none',
+                border: '2px solid rgba(255,255,255,0.4)',
                 borderRadius: '9999px',
-                fontWeight: 'bold',
+                fontWeight: '900',
+                textTransform: 'uppercase',
+                letterSpacing: '0.05em'
               }}
               animate={{
-                boxShadow: ["0 0 20px rgba(167, 112, 255, 0.4)", "0 0 45px rgba(167, 112, 255, 0.9)", "0 0 20px rgba(167, 112, 255, 0.4)"],
-                scale: [1, 1.02, 1]
+                boxShadow: [
+                  "0 0 30px rgba(167, 112, 255, 0.6), inset 0 0 10px rgba(255,255,255,0.3)", 
+                  "0 0 80px rgba(167, 112, 255, 1), inset 0 0 25px rgba(255,255,255,0.8)", 
+                  "0 0 30px rgba(167, 112, 255, 0.6), inset 0 0 10px rgba(255,255,255,0.3)"
+                ],
+                scale: [1, 1.05, 1]
               }}
-              whileHover={{ scale: 1.05, boxShadow: "0 0 60px rgba(167, 112, 255, 1)" }}
+              whileHover={{ scale: 1.1, boxShadow: "0 0 120px rgba(167, 112, 255, 1), inset 0 0 30px rgba(255,255,255,0.9)" }}
               whileTap={{ scale: 0.95 }}
-              transition={{ duration: 2.5, repeat: Infinity, ease: "easeInOut" as any }}
+              transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" as any }}
             >
-              <span className="relative z-10 flex items-center gap-2">
-                Learn More About Us 
+              <span className="relative z-10 flex items-center gap-3">
+                Unlock The Actuarial Math 
                 <motion.span animate={{ y: [0, 5, 0] }} transition={{ duration: 1.5, repeat: Infinity }}>↓</motion.span>
               </span>
               <motion.div 
