@@ -153,7 +153,7 @@ export const AboutUs: React.FC<AboutUsProps> = ({ isExpanded, setIsExpanded }) =
               transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" as any }}
             >
               <span className="relative z-10 flex items-center gap-3">
-                EXPLORE THE FULL DECK
+                LEARN MORE ABOUT US
                 <motion.span animate={{ y: [0, 5, 0] }} transition={{ duration: 1.5, repeat: Infinity }}>↓</motion.span>
               </span>
               <motion.div 
