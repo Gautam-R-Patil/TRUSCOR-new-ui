@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import gautamImg from '../assets/gautam.png';
-import dheerajImg from '../assets/dheeraj.png';
+import gautamImg from '../assets/gautam.jpg';
+import dheerajImg from '../assets/dheeraj.jpg';
 
 
 
@@ -41,7 +41,7 @@ export const Team: React.FC = () => {
           {/* Gautam Patil */}
           <motion.div variants={scrollVariants} className="flex flex-col items-center text-center p-8 bg-white/90 rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
             <div className="w-48 h-48 rounded-full overflow-hidden mb-6 border-4 border-white shadow-lg relative bg-gray-100 flex items-center justify-center">
-              <img src={gautamImg} alt="Gautam Patil" className="w-full h-full object-cover scale-[1.35]" />
+              <img src={gautamImg} alt="Gautam Patil" className="w-full h-full object-cover object-top" />
             </div>
             <h3 className="font-sans font-bold text-2xl mb-4 text-[#040224]">Gautam Patil</h3>
             <div className="font-mono text-accent text-sm font-bold mb-4 tracking-wide">FOUNDING CEO & CTO</div>
@@ -57,7 +57,7 @@ export const Team: React.FC = () => {
           {/* Dheeraj S */}
           <motion.div variants={scrollVariants} className="flex flex-col items-center text-center p-8 bg-white/90 rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
             <div className="w-48 h-48 rounded-full overflow-hidden mb-6 border-4 border-white shadow-lg relative bg-gray-100 flex items-center justify-center">
-              <img src={dheerajImg} alt="Dheeraj S" className="w-full h-full object-cover scale-[1.35]" />
+              <img src={dheerajImg} alt="Dheeraj S" className="w-full h-full object-cover object-top" />
             </div>
             <h3 className="font-sans font-bold text-2xl mb-4 text-[#040224]">Dheeraj S</h3>
             <div className="font-mono text-accent text-sm font-bold mb-4 tracking-wide leading-relaxed">FOUNDING PARTNER<br />OPERATIONS & REVENUE</div>
