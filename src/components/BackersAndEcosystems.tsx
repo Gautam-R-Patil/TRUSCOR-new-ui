@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-// Backers Logos
+// Backers & Ecosystem Logos
 import iitmrpLogo from '../assets/logos/iitmrp.png';
 import build3Logo from '../assets/logos/build3.jpeg';
 import razorpayLogo from '../assets/logos/razorpay.webp';
@@ -18,8 +18,6 @@ import anthropicLogo from '../assets/logos/anthropic.svg';
 import zohoLogo from '../assets/logos/zoho.jpg';
 import dpiitLogo from '../assets/logos/dpiit.webp';
 import sarvamLogo from '../assets/logos/sarvam.jpeg';
-
-// Ecosystem Logos
 import ynosLogo from '../assets/logos/ynos.png';
 import viseyLogo from '../assets/logos/visey.webp';
 
@@ -27,7 +25,7 @@ import viseyLogo from '../assets/logos/visey.webp';
 import newsTrailLogo from '../assets/logos/newstrail.jpeg';
 import tycoonWorldLogo from '../assets/logos/tycoonworld.png';
 
-interface BackerItem {
+interface PartnerItem {
   name: string;
   category: string;
   logo: string;
@@ -44,48 +42,13 @@ interface FeaturedItem {
   badge: string;
 }
 
-const backersList: BackerItem[] = [
+// Row 1 Partners (Glides to the left)
+const row1Partners: PartnerItem[] = [
   {
     name: 'IIT Madras Research Park',
     category: 'Incubation & Deeptech Hub',
     logo: iitmrpLogo,
     url: 'https://respark.iitm.ac.in/startups'
-  },
-  {
-    name: 'Build 3',
-    category: 'Venture Studio & Accelerator',
-    logo: build3Logo,
-    url: 'https://www.build3.org/'
-  },
-  {
-    name: 'Razorpay',
-    category: 'Fintech & Enterprise Cloud',
-    logo: razorpayLogo,
-    url: 'https://razorpay.com/'
-  },
-  {
-    name: 'T-HUB',
-    category: 'Innovation Ecosystem',
-    logo: thubLogo,
-    url: 'https://www.t-hub.co/'
-  },
-  {
-    name: 'Scaler Innovation Lab',
-    category: 'AI & Research Lab',
-    logo: scalerLogo,
-    url: 'https://modest-use-253097.framer.app/innovation-lab'
-  },
-  {
-    name: 'AWS',
-    category: 'AWS for Startups',
-    logo: awsLogo,
-    url: 'https://aws.amazon.com/startups/'
-  },
-  {
-    name: 'DBS Bank',
-    category: 'SME Innovation Program',
-    logo: dbsLogo,
-    url: 'https://www.dbs.bank.in/in/sme/default.page'
   },
   {
     name: 'Google Cloud',
@@ -94,28 +57,22 @@ const backersList: BackerItem[] = [
     url: 'https://cloud.google.com/startup'
   },
   {
-    name: 'GitHub',
-    category: 'GitHub for Startups',
-    logo: githubLogo,
-    url: 'https://github.com/enterprise/startups'
-  },
-  {
-    name: 'Perplexity',
-    category: 'Perplexity AI Startups',
-    logo: perplexityLogo,
-    url: 'https://www.perplexity.ai/startups'
+    name: 'Razorpay',
+    category: 'Fintech & Enterprise Cloud',
+    logo: razorpayLogo,
+    url: 'https://razorpay.com/'
   },
   {
     name: 'Microsoft',
-    category: 'Microsoft Founders Hub',
+    category: 'Founders Hub Enterprise',
     logo: microsoftLogo,
     url: 'https://www.microsoft.com/en-us/startups'
   },
   {
-    name: 'Replit',
-    category: 'Replit for Startups',
-    logo: replitLogo,
-    url: 'https://replit.com/startups'
+    name: 'T-HUB',
+    category: 'Innovation Ecosystem',
+    logo: thubLogo,
+    url: 'https://www.t-hub.co/'
   },
   {
     name: 'Anthropic',
@@ -124,31 +81,68 @@ const backersList: BackerItem[] = [
     url: 'https://www.anthropic.com/startup-program-official-terms'
   },
   {
-    name: 'Zoho',
-    category: 'Zoho for Startups',
-    logo: zohoLogo,
-    url: 'https://www.zoho.com/en-in/startups/'
+    name: 'YNOS Venture Engine',
+    category: 'IIT Madras Intelligence Platform',
+    logo: ynosLogo,
+    url: 'https://www.ynos.in/'
+  },
+  {
+    name: 'Build 3',
+    category: 'Venture Studio & Accelerator',
+    logo: build3Logo,
+    url: 'https://www.build3.org/'
+  },
+  {
+    name: 'Replit',
+    category: 'Replit for Startups',
+    logo: replitLogo,
+    url: 'https://replit.com/startups'
   },
   {
     name: 'Startup India',
     category: 'DPIIT Recognised Enterprise',
     logo: dpiitLogo,
     url: 'https://www.startupindia.gov.in/'
-  },
-  {
-    name: 'Sarvam AI',
-    category: 'Sovereign AI Ecosystem',
-    logo: sarvamLogo,
-    url: 'https://www.sarvam.ai/'
   }
 ];
 
-const ecosystemsList: BackerItem[] = [
+// Row 2 Partners (Glides in opposite direction to the right)
+const row2Partners: PartnerItem[] = [
   {
-    name: 'YNOS Venture Engine',
-    category: 'IIT Madras Intelligence Platform',
-    logo: ynosLogo,
-    url: 'https://www.ynos.in/'
+    name: 'AWS',
+    category: 'AWS for Startups',
+    logo: awsLogo,
+    url: 'https://aws.amazon.com/startups/'
+  },
+  {
+    name: 'GitHub',
+    category: 'GitHub for Startups',
+    logo: githubLogo,
+    url: 'https://github.com/enterprise/startups'
+  },
+  {
+    name: 'DBS Bank',
+    category: 'SME Innovation Program',
+    logo: dbsLogo,
+    url: 'https://www.dbs.bank.in/in/sme/default.page'
+  },
+  {
+    name: 'Perplexity',
+    category: 'Perplexity AI Startups',
+    logo: perplexityLogo,
+    url: 'https://www.perplexity.ai/startups'
+  },
+  {
+    name: 'Scaler Innovation Lab',
+    category: 'AI & Research Lab',
+    logo: scalerLogo,
+    url: 'https://modest-use-253097.framer.app/innovation-lab'
+  },
+  {
+    name: 'Zoho',
+    category: 'Zoho for Startups',
+    logo: zohoLogo,
+    url: 'https://www.zoho.com/en-in/startups/'
   },
   {
     name: 'Visey',
@@ -161,6 +155,12 @@ const ecosystemsList: BackerItem[] = [
     category: 'Founder Community & Benefits',
     logo: razorpayLogo,
     url: 'https://razorpay.com/rize/community/'
+  },
+  {
+    name: 'Sarvam AI',
+    category: 'Sovereign AI Ecosystem',
+    logo: sarvamLogo,
+    url: 'https://www.sarvam.ai/'
   }
 ];
 
@@ -168,11 +168,11 @@ const mediaFeatures: FeaturedItem[] = [
   {
     outlet: 'News Trail',
     badge: 'National Press Feature',
-    title: 'Truscor pioneers AI liability & insurance actuarial testing',
+    title: "Dharwad student's tech venture secures global backing to audit enterprise AI",
     date: 'Tech & Enterprise',
     logo: newsTrailLogo,
     url: 'https://newstrailindia.com/inner.php?id=30566',
-    quote: 'Chennai-based startup builds the definitive actuarial safety rating and risk assessment framework for enterprise AI models.'
+    quote: 'Bangalore-based startup builds the definitive actuarial safety rating and risk assessment framework for enterprise AI models.'
   },
   {
     outlet: 'Tycoon World',
@@ -192,9 +192,9 @@ interface BackersAndEcosystemsProps {
 export const BackersAndEcosystems: React.FC<BackersAndEcosystemsProps> = ({ variant = 'standalone' }) => {
   const isInline = variant === 'inline';
 
-  // Duplicate arrays for infinite loop
-  const duplicatedBackers = [...backersList, ...backersList];
-  const duplicatedEcosystems = [...ecosystemsList, ...ecosystemsList, ...ecosystemsList, ...ecosystemsList];
+  // Duplicate arrays for seamless infinite marquee loop
+  const duplicatedRow1 = [...row1Partners, ...row1Partners, ...row1Partners];
+  const duplicatedRow2 = [...row2Partners, ...row2Partners, ...row2Partners];
 
   return (
     <div className={`w-full relative z-20 overflow-hidden ${isInline ? 'my-12' : 'my-20'}`}>
@@ -217,105 +217,109 @@ export const BackersAndEcosystems: React.FC<BackersAndEcosystemsProps> = ({ vari
         </motion.div>
       </div>
 
-      {/* ROW 1: PRIMARY BACKERS ROLLING BANNER */}
-      <div className="w-full relative py-3 marquee-container mb-6 overflow-hidden">
-        {/* Edge Fade Gradients */}
-        <div className="pointer-events-none absolute left-0 inset-y-0 w-20 sm:w-36 bg-gradient-to-r from-[#fafcff] to-transparent z-10" />
-        <div className="pointer-events-none absolute right-0 inset-y-0 w-20 sm:w-36 bg-gradient-to-l from-[#fafcff] to-transparent z-10" />
+      {/* DUAL PARALLEL OPPOSITE-FLOWING ROLLING BANNERS */}
+      <div className="flex flex-col gap-4 mb-16">
+        
+        {/* ROW 1: Gliding to Left */}
+        <div className="w-full relative py-2 marquee-container overflow-hidden">
+          {/* Edge Fade Gradients */}
+          <div className="pointer-events-none absolute left-0 inset-y-0 w-20 sm:w-36 bg-gradient-to-r from-[#fafcff] to-transparent z-10" />
+          <div className="pointer-events-none absolute right-0 inset-y-0 w-20 sm:w-36 bg-gradient-to-l from-[#fafcff] to-transparent z-10" />
 
-        <div className="animate-marquee flex items-center gap-5">
-          {duplicatedBackers.map((backer, idx) => (
-            <a
-              key={`backer-${backer.name}-${idx}`}
-              href={backer.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group relative flex items-center gap-4 px-5 py-3.5 rounded-2xl bg-white/85 hover:bg-white border border-gray-200/90 hover:border-accent/40 shadow-xs hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300 shrink-0 cursor-pointer"
-              style={{ minWidth: '220px', maxWidth: '320px' }}
-            >
-              {/* Logo Box */}
-              <div className="w-12 h-12 rounded-xl bg-white border border-gray-100 flex items-center justify-center p-2 shrink-0 shadow-2xs group-hover:scale-105 transition-transform duration-300">
-                <img
-                  src={backer.logo}
-                  alt={backer.name}
-                  className="w-full h-full object-contain"
-                  loading="lazy"
-                />
-              </div>
-
-              {/* Text Info */}
-              <div className="flex flex-col min-w-0 pr-1">
-                <div className="flex items-center gap-1.5">
-                  <span className="font-sans font-bold text-sm text-[#040224] group-hover:text-accent truncate transition-colors">
-                    {backer.name}
-                  </span>
-                  <svg
-                    className="w-3.5 h-3.5 text-gray-400 group-hover:text-accent group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all opacity-0 group-hover:opacity-100 shrink-0"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                  </svg>
+          <div className="animate-marquee flex items-center gap-5">
+            {duplicatedRow1.map((partner, idx) => (
+              <a
+                key={`row1-${partner.name}-${idx}`}
+                href={partner.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group relative flex items-center gap-4 px-5 py-3.5 rounded-2xl bg-white/85 hover:bg-white border border-gray-200/90 hover:border-accent/40 shadow-xs hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300 shrink-0 cursor-pointer"
+                style={{ minWidth: '220px', maxWidth: '320px' }}
+              >
+                {/* Logo Box */}
+                <div className="w-12 h-12 rounded-xl bg-white border border-gray-100 flex items-center justify-center p-2 shrink-0 shadow-2xs group-hover:scale-105 transition-transform duration-300">
+                  <img
+                    src={partner.logo}
+                    alt={partner.name}
+                    className="w-full h-full object-contain"
+                    loading="lazy"
+                  />
                 </div>
-                <span className="font-mono text-[11px] text-gray-500 truncate">
-                  {backer.category}
-                </span>
-              </div>
-            </a>
-          ))}
-        </div>
-      </div>
 
-      {/* ROW 2: ECOSYSTEMS BANNER (Smaller, Subtle Secondary Row) */}
-      <div className="container mx-auto px-4 mt-8 mb-4">
-        <div className="flex items-center justify-center gap-3 mb-4">
-          <div className="h-[1px] w-12 bg-gradient-to-r from-transparent to-gray-300" />
-          <span className="font-mono text-[11px] font-bold tracking-[0.25em] text-[#5b5675] uppercase">
-            ECOSYSTEM NETWORKS & PARTNERS
-          </span>
-          <div className="h-[1px] w-12 bg-gradient-to-l from-transparent to-gray-300" />
-        </div>
-      </div>
-
-      <div className="w-full relative py-2 marquee-container mb-16 overflow-hidden">
-        {/* Edge Fade Gradients */}
-        <div className="pointer-events-none absolute left-0 inset-y-0 w-20 sm:w-36 bg-gradient-to-r from-[#fafcff] to-transparent z-10" />
-        <div className="pointer-events-none absolute right-0 inset-y-0 w-20 sm:w-36 bg-gradient-to-l from-[#fafcff] to-transparent z-10" />
-
-        <div className="animate-marquee-reverse flex items-center gap-4">
-          {duplicatedEcosystems.map((eco, idx) => (
-            <a
-              key={`eco-${eco.name}-${idx}`}
-              href={eco.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group relative flex items-center gap-3 px-4 py-2.5 rounded-xl bg-white/70 hover:bg-white border border-gray-200/80 hover:border-accent/40 shadow-xs hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 shrink-0 cursor-pointer"
-            >
-              <div className="w-8 h-8 rounded-lg bg-white border border-gray-100 flex items-center justify-center p-1.5 shrink-0 shadow-2xs group-hover:scale-105 transition-transform">
-                <img
-                  src={eco.logo}
-                  alt={eco.name}
-                  className="w-full h-full object-contain"
-                  loading="lazy"
-                />
-              </div>
-              <div className="flex flex-col">
-                <div className="flex items-center gap-1">
-                  <span className="font-sans font-semibold text-xs text-[#040224] group-hover:text-accent whitespace-nowrap transition-colors">
-                    {eco.name}
+                {/* Text Info */}
+                <div className="flex flex-col min-w-0 pr-1">
+                  <div className="flex items-center gap-1.5">
+                    <span className="font-sans font-bold text-sm text-[#040224] group-hover:text-accent truncate transition-colors">
+                      {partner.name}
+                    </span>
+                    <svg
+                      className="w-3.5 h-3.5 text-gray-400 group-hover:text-accent group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all opacity-0 group-hover:opacity-100 shrink-0"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                    </svg>
+                  </div>
+                  <span className="font-mono text-[11px] text-gray-500 truncate">
+                    {partner.category}
                   </span>
-                  <svg className="w-3 h-3 text-gray-400 group-hover:text-accent opacity-0 group-hover:opacity-100 transition-opacity" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                  </svg>
                 </div>
-                <span className="font-mono text-[10px] text-gray-500 whitespace-nowrap">
-                  {eco.category}
-                </span>
-              </div>
-            </a>
-          ))}
+              </a>
+            ))}
+          </div>
         </div>
+
+        {/* ROW 2: Gliding in Opposite Direction to Right */}
+        <div className="w-full relative py-2 marquee-container overflow-hidden">
+          {/* Edge Fade Gradients */}
+          <div className="pointer-events-none absolute left-0 inset-y-0 w-20 sm:w-36 bg-gradient-to-r from-[#fafcff] to-transparent z-10" />
+          <div className="pointer-events-none absolute right-0 inset-y-0 w-20 sm:w-36 bg-gradient-to-l from-[#fafcff] to-transparent z-10" />
+
+          <div className="animate-marquee-reverse flex items-center gap-5">
+            {duplicatedRow2.map((partner, idx) => (
+              <a
+                key={`row2-${partner.name}-${idx}`}
+                href={partner.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group relative flex items-center gap-4 px-5 py-3.5 rounded-2xl bg-white/85 hover:bg-white border border-gray-200/90 hover:border-accent/40 shadow-xs hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300 shrink-0 cursor-pointer"
+                style={{ minWidth: '220px', maxWidth: '320px' }}
+              >
+                {/* Logo Box */}
+                <div className="w-12 h-12 rounded-xl bg-white border border-gray-100 flex items-center justify-center p-2 shrink-0 shadow-2xs group-hover:scale-105 transition-transform duration-300">
+                  <img
+                    src={partner.logo}
+                    alt={partner.name}
+                    className="w-full h-full object-contain"
+                    loading="lazy"
+                  />
+                </div>
+
+                {/* Text Info */}
+                <div className="flex flex-col min-w-0 pr-1">
+                  <div className="flex items-center gap-1.5">
+                    <span className="font-sans font-bold text-sm text-[#040224] group-hover:text-accent truncate transition-colors">
+                      {partner.name}
+                    </span>
+                    <svg
+                      className="w-3.5 h-3.5 text-gray-400 group-hover:text-accent group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all opacity-0 group-hover:opacity-100 shrink-0"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                    </svg>
+                  </div>
+                  <span className="font-mono text-[11px] text-gray-500 truncate">
+                    {partner.category}
+                  </span>
+                </div>
+              </a>
+            ))}
+          </div>
+        </div>
+
       </div>
 
       {/* FEATURED IN SECTION */}
