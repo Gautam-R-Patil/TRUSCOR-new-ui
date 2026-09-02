@@ -11,6 +11,7 @@ import { TechnologyMoatsVisual } from './TechnologyMoatsVisual';
 import { FinancialEndgameVisual } from './FinancialEndgameVisual';
 import { BusinessModelPricingVisual } from './BusinessModelPricingVisual';
 import { ReciprocalExchangeVisual } from './ReciprocalExchangeVisual';
+import { BackersAndEcosystems } from './BackersAndEcosystems';
 
 // Virtual section: mounts children when near viewport, but DOES NOT UNMOUNT them.
 // This prevents catastrophic scroll jumping caused by document height collapsing above the viewport.
@@ -476,8 +477,12 @@ export const AboutUs: React.FC<AboutUsProps> = ({ isExpanded, setIsExpanded }) =
               
               <InViewSection minHeight="300px"><FinancialEndgameVisual /></InViewSection>
 
-              <div className="container relative z-20 mt-16 mb-24">
+              <div className="container relative z-20 mt-16 mb-16">
                 <ReciprocalExchangeVisual />
+              </div>
+
+              <div className="relative z-20 my-16">
+                <BackersAndEcosystems variant="inline" />
               </div>
 
               <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} variants={scrollVariants} className="text-center mt-24 mb-4" id="about-pricing">

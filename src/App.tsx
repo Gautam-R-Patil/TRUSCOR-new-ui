@@ -13,6 +13,8 @@ import { Team } from './components/Team';
 import { Footer } from './components/Footer';
 import { Navigation } from './components/Navigation';
 import { ReciprocalExchangeVisual } from './components/ReciprocalExchangeVisual';
+import { MiniBackersMarquee } from './components/MiniBackersMarquee';
+import { BackersAndEcosystems } from './components/BackersAndEcosystems';
 
 import Lenis from 'lenis';
 
@@ -58,10 +60,12 @@ function App() {
 
       <div className="scroll-container">
         <Hero hasLoaded={hasLoaded} />
+        <MiniBackersMarquee />
         <DemoTeaser />
         <LiveAudit />
         <DemoDownload />
         <ReciprocalExchangeVisual />
+        <BackersAndEcosystems />
         <AboutUs isExpanded={aboutExpanded} setIsExpanded={setAboutExpanded} />
         <Team />
         <Waitlist />
